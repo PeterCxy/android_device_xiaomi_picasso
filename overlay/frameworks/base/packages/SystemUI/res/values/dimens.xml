@@ -20,5 +20,7 @@
     <!-- The padding on the side of the navigation bar. Must be greater than or equal to
          navigation_extra_key_width -->
     <dimen name="navigation_side_padding">85.0dip</dimen>
+    <!-- the padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">8dp</dimen>
     <dimen name="rounded_corner_content_padding">7.0dip</dimen>
 </resources>
