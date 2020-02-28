@@ -2,6 +2,3 @@ on early-init
     # Load some kernel modules we put in /system instead of /vendor
     exec u:r:modprobe:s0 -- /system/bin/modprobe -a -d \
         /system/lib/modules wlan rmnet_perf rmnet_shs
-
-on post-fs
-    mount none /system/etc/media_profiles_vendor.xml /vendor/etc/media_profiles_vendor.xml bind
