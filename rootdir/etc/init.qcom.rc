@@ -1,0 +1,2 @@
+on post-fs
+    mount none /system/etc/media_profiles_vendor.xml /vendor/etc/media_profiles_vendor.xml bind

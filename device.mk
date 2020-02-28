@@ -9,6 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -20,9 +21,18 @@ AB_OTA_UPDATER := false
 PRODUCT_PACKAGES += \
     Snap
 
+# Configs
+# TODO: enable overlayfs in kernel and use vendor_overlay
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Init scripts
+PRODUCT_PACKAGES += \
+    init.qcom.rc
 
 # Telephony
 PRODUCT_PACKAGES += \
