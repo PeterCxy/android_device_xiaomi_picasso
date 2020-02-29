@@ -15,4 +15,6 @@
     <string name="device_specific_settings_title">Device-specific settings</string>
     <string name="device_specific_settings_summary">Settings specific to Redmi K30 5G</string>
     <string name="device_min_refresh_rate">Minimum Refresh Rate</string>
+    <string name="device_pill_style_notch">Pill-style Notch</string>
+    <string name="msg_device_need_restart">Please restart device for this to take effect.</string>
 </resources>
