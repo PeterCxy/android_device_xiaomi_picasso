@@ -9,3 +9,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.a2dp_offload.disabled=true \
     vendor.audio.feature.a2dp_offload.enable=false \
     persist.vendor.qcom.bluetooth.enable.splita2dp=false
+
+# Bluetooth
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.bluetooth.library_name=libbluetooth.so
