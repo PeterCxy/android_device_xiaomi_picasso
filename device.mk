@@ -46,6 +46,8 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    NQNfcNci \
+    com.nxp.nfc.nq \
     android.hardware.nfc@1.0:64 \
     android.hardware.nfc@1.1:64 \
     android.hardware.nfc@1.2:64 \
