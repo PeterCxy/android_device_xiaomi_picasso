@@ -13,6 +13,7 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_BUILD_PRODUCT_IMAGE := true
 
 # Properties
 include $(LOCAL_PATH)/product_prop.mk
@@ -47,7 +48,7 @@ PRODUCT_PACKAGES += \
     DeviceSettings
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/devicesettings/privapp-permissions-devicesettings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-devicesettings.xml
+    $(LOCAL_PATH)/devicesettings/privapp-permissions-devicesettings.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-devicesettings.xml
 
 # fastbootd
 PRODUCT_PACKAGES += \
