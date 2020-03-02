@@ -1,0 +1,27 @@
+# IMS
+-product/priv-app/ims/ims.apk
+product/lib64/libdiag_system.so
+product/lib64/libimscamera_jni.so
+product/lib64/libimsmedia_jni.so
+product/lib64/lib-imsvideocodec.so
+product/lib64/lib-imsvtextutils.so
+product/lib64/lib-imsvt.so
+product/lib64/lib-imsvtutils.so
+product/lib64/vendor.qti.imsrtpservice@2.0.so
+product/lib64/vendor.qti.imsrtpservice@2.1.so
+
+# Telephony
+etc/permissions/privapp-permissions-qti.xml
+etc/permissions/qti_libpermissions.xml
+etc/permissions/qti_permissions.xml
+etc/sysconfig/qti_whitelist.xml
+-product/app/QtiTelephonyService/QtiTelephonyService.apk
+product/etc/permissions/qcrilhook.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
+product/etc/permissions/telephonyservice.xml
+product/framework/qcrilhook.jar
+product/framework/QtiTelephonyServicelibrary.jar
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
+product/framework/qti-telephony-common.jar|b4d187700f279cdbd40e74b4c3be4504f10d8b29
