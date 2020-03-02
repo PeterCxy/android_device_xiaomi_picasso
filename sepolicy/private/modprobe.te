@@ -1,0 +1,2 @@
+# Allow modprobe to load kernel modules in /system/lib/modules
+allow modprobe system_file:system module_load;
