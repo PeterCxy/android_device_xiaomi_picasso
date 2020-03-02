@@ -22,6 +22,9 @@ TARGET_2ND_CPU_VARIANT := generic
 
 TARGET_USES_64_BIT_BINDER := true
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 

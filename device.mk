@@ -25,6 +25,10 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 # No A/B
 AB_OTA_UPDATER := false
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
