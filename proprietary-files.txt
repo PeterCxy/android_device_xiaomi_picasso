@@ -1,5 +1,6 @@
 # IMS
--product/priv-app/ims/ims.apk
+# ims.apk: patched ImsServiceStateReceiver.shallShowHDIcon() to always return false
+-product/priv-app/ims/ims.apk|ce4b30992c383ded08eeae50d9c7c46bec3093d8
 product/lib64/libdiag_system.so
 product/lib64/libimscamera_jni.so
 product/lib64/libimsmedia_jni.so
