@@ -1,0 +1,2 @@
+# sysfs
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify u:object_r:sysfs_battery_supply:s0
