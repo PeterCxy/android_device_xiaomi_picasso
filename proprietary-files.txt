@@ -38,6 +38,10 @@ product/lib64/lib-imsvtutils.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 
+# Soundfx - from guacamole QKQ1.190716.003
+product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|e6c1f1bfb7bd5cfb36131aaff0d4e8c74833865d
+product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|1b16cd00fd2144e860f99c0869c2db1489c789a2
+
 # Telephony
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
