@@ -120,6 +120,8 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
     <!-- Idle current for bluetooth controller. 0 by default-->
     <integer name="config_bluetooth_idle_cur_ma">3</integer>
     <!-- Operating volatage for bluetooth controller. 0 by default-->
