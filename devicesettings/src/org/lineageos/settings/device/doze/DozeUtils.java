@@ -73,7 +73,7 @@ public final class DozeUtils {
         return false;
     }
 
-    protected static boolean enableDoze(Context context, boolean enable) {
+    public static boolean enableDoze(Context context, boolean enable) {
         return Settings.Secure.putInt(context.getContentResolver(),
                 DOZE_ENABLED, enable ? 1 : 0);
     }
