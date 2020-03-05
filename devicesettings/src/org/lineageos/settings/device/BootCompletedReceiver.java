@@ -23,6 +23,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
+import org.lineageos.settings.device.doze.DozeUtils;
+
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
@@ -40,6 +42,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         } catch (Exception e) {
             // Ignore
         }
+
+        // Doze
+        DozeUtils.checkDozeService(context);
     }
 
 }

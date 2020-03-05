@@ -11,6 +11,8 @@
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
 
+    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
+
     <application
         android:allowBackup="true"
         android:label="@string/device_settings_app_name"
@@ -37,6 +39,20 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/device_specific_settings_summary" />
         </activity>
+
+        <activity
+            android:name=".doze.DozeSettingsActivity"
+            android:label="@string/ambient_display_title"
+            android:theme="@style/DeviceSettings">
+            <intent-filter>
+                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".doze.DozeService"
+                 android:permission="XiaomiDozeService">
+        </service>
 
     </application>
 </manifest>
