@@ -22,3 +22,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.bluetooth.library_name=libbluetooth.so
+
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
