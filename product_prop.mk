@@ -25,4 +25,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
-    vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
+    vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,com.google.android.GoogleCamera
